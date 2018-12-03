@@ -811,7 +811,7 @@ export interface ObjectSchema extends AnySchema {
     /**
      * Renames a key to another name (deletes the renamed key).
      */
-    rename(from: string, to: string, options?: RenameOptions): this;
+    rename(from: string | RegExp, to: string, options?: RenameOptions): this;
 
     /**
      * Verifies an assertion where.
